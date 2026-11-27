@@ -8,3 +8,13 @@ class Solution:
             wealth.append(sum)
             sum = 0
         return max(wealth)
+
+
+class Solution:
+    def maximumWealth(self, accounts: list[list[int]]) -> int:
+        biggest = 0
+        for customer in accounts:
+            total = sum(customer)
+            if total>biggest:
+                biggest+=total
+            retrun biggest
